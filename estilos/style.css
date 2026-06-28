@@ -30,15 +30,15 @@ main{
 
 section#login{
     height: 500px;
-    width: 250px;
+    width: 280px;
     background-color: white;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.51);
     overflow: hidden;
+    transform: translate(-50%, -50%);  /*Transformaçoes e Animacoes (Transitions) devem ser feitas no final da propriedade para evitar incompatibilidade com diferentes browsers */
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
 }
@@ -54,3 +54,75 @@ div#formulario{
     display: block;
     padding: 10px;
 }
+
+div h1{
+        font-size: 1.5Em;
+        text-align: center;
+    }
+
+div p{
+        font-size: 0.8Em;
+    }
+
+form div.campo {
+    height: 40px;
+    background-color: #5f2c82;
+    width: 100%;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+form div.campo span{
+    color: white;
+    font-size: 1.5Em;
+
+}
+
+form label{
+    display: none;
+}
+
+form div.campo input{
+    height: 100%;
+    width: calc(100% - 30px);
+    border: 2px solid #5f2c82;
+    border-radius: 5px;
+    background-color: #89e1de;
+}
+
+form div.campo input:focus-within{
+    background-color: white;
+}
+
+form input[type=submit]{
+    background-color: #49a09d;
+    height: 40px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+form input[type=submit]:hover{
+    background-color: #015b58;
+
+}
+
+form a{
+    text-decoration: none;
+    background-color: lightgray;
+    height: 40px;
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.9Em;
+}
+
+form a:hover{
+    background-color: gray;
+}
+
