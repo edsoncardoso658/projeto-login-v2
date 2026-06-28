@@ -87,7 +87,7 @@ form div.campo input{
     width: calc(100% - 30px);
     border: 2px solid #5f2c82;
     border-radius: 5px;
-    background-color: #89e1de;
+    background-color: #c0f6f47d;
 }
 
 form div.campo input:focus-within{
